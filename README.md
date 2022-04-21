@@ -13,16 +13,22 @@ In the Go do you get to play with your tasks in four ways, create, edit, view an
 After you have installed your prerequisites, follow the steps:
 1. Create the database and table in MySQL
 > create database taskdatabase;
+> 
 > use taskdatabase;
+> 
 > create table tasks(task_id int PRIMARY_KEY, task_title varchar(255), task_description varchar(255), task_date varchar(255));
 
 2. To run the Go API:
 Replace the User: "root", and Passwd: "root1234", in <b>databaseServiceImpl.go</b> to your preferred username and password in MySQL that you have set up.
 > cd godoMain
+> 
 > go run main.go
 
 3. To run the UI:
 > cd godoMain/ui
+> 
 > npm install Vue@latest
+> 
 > npm install
+> 
 > npm run dev
